@@ -9,7 +9,7 @@ RUN cd ~/ot_libs && \
     cd PyMongeAmpere && git submodule update --init --recursive && \
     mkdir build && cd build && \
     cmake -DCGAL_DIR=/usr/lib64/cmake/CGAL .. && \
-    make -j2
+    make -j1
 
 # Siconos
 RUN cd ~/ot_libs && \
@@ -17,7 +17,7 @@ RUN cd ~/ot_libs && \
     cd siconos && \
     mkdir build && cd build && \
     cmake .. && \
-    make -j2 && \
+    make -j1 && \
     make install
 
 # Siconos examples
