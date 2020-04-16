@@ -39,6 +39,12 @@ cd ~/ot_libs
 jupyter lab --ip=0.0.0.0 --allow-root
 ```
 
+To share files between the host and the container:
+
+```{bash}
+docker run -it -p 8888:8888 -v <your/local/folder>:<your/container/folder> monge-ot-libs
+```
+
 ## Misc Docker Commands
 
 * To list your Docker images
