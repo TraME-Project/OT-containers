@@ -29,7 +29,7 @@ The build sequence is as follows.
 
 To run the final Docker image in interactive mode with port 8888 open:
 ```{bash}
-docker run -it -p 8888:8888 monge-ot-libs
+docker run -it --rm -p 8888:8888 monge-ot-libs
 ```
 
 To run Jupyter Lab
@@ -42,7 +42,7 @@ jupyter lab --ip=0.0.0.0 --allow-root
 To share files between the host and the container:
 
 ```{bash}
-docker run -it -p 8888:8888 -v <your/local/folder>:<your/container/folder> monge-ot-libs
+docker run -it --rm -p 8888:8888 -v <your/local/folder>:<your/container/folder> monge-ot-libs
 ```
 
 ## Misc Docker Commands
