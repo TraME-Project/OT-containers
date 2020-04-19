@@ -16,6 +16,7 @@ RUN dnf install -y \
     gmp-devel \
     libtool \
     libcurl-devel \
+    wget \
     libicu-devel \
     openssl-devel \
     zlib-devel \
